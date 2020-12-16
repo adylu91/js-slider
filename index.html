@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="slider">        
+        <section class="slider__container">
+            <button class="slider__button slider__button--prev" data-button-prev></button>
+            <figure class="slide" data-slide></figure>
+            <button class="slider__button slider__button--next" data-button-next></button>
+        </section>
+    </main>
+    <script src="/js/index.js"></script>
+    <script>
+    const imageArr = [
+        '/image/1.jpg',
+        '/image/2.jpg',
+        '/image/3.jpg',
+        '/image/4.jpg',
+        '/image/5.jpg'
+    ]    
+    const slider = new Slider(imageArr);
+    slider.initalizeSlider();
+    </script>
+</body>
+</html>
